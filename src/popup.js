@@ -37,20 +37,20 @@ import { counterStorage } from './counter.storage';
 
       // Communicate with content script of
       // active tab by sending a message
-      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        const tab = tabs[0];
-
-        chrome.tabs.sendMessage(
-          tab.id,
-          {
-            type: 'COUNT',
-            payload: {
-              count: newValue,
-            },
-          },
-          (response) => {}
-        );
-      });
+      // chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      //   const tab = tabs[0];
+      //
+      //   chrome.tabs.sendMessage(
+      //     tab.id,
+      //     {
+      //       type: 'COUNT',
+      //       payload: {
+      //         count: newValue,
+      //       },
+      //     },
+      //     (response) => {}
+      //   );
+      // });
     });
   }
 
