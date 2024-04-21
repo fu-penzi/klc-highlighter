@@ -1,5 +1,7 @@
 'use strict';
 
+import { counterStorage } from './counter.storage';
+
 // Content script file will run in the context of web page.
 // With content script you can manipulate the web pages using
 // Document Object Model (DOM).
@@ -10,19 +12,6 @@
 
 // For more information on Content Scripts,
 // See https://developer.chrome.com/extensions/content_scripts
-
-// Communicate with background file by sending a message
-chrome.runtime.sendMessage(
-  {
-    type: 'GREETINGS',
-    payload: {
-      message: 'Hello, my name is Con. I am from ContentScript.',
-    },
-  },
-  (response) => {
-    console.log(response.message);
-  }
-);
 
 // Listen for message
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
@@ -35,3 +24,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   sendResponse({});
   return true;
 });
+
+(function () {})();

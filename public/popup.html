@@ -2,22 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Chrome Extension</title>
+    <title>KLC Highlight</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <div class="app">
-      <p class="counter-label">Counter</p>
-      <div id="counter" class="counter"></div>
-      <div class="button-container">
-        <button id="decrementBtn" class="button">-</button>
-        <button id="incrementBtn" class="button">+</button>
+      <p class="title">Set number of kanji you have learned</p>
+
+      <div>
+        <span id="counter" class="counter"></span>
+        <span id="maxCounter" class="max-counter">/2300</span>
       </div>
 
-      <hr class="divider" />
+      <form id="form" class="button-container">
+        <div>
+          <label for="counterInput"></label>
+          <input id="counterInput" class="element" type="number" min="0" max="2300" autofocus required />
+        </div>
 
-      <p class="title">dsadsadwasdadawd Extension is Ready!</p>
-      <p class="subtitle">Start by updating <code>popup.html</code></p>
+        <button id="saveBtn" class="element button" type="submit">Save</button>
+      </form>
     </div>
 
     <script src="popup.js"></script>

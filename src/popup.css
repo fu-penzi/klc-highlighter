@@ -9,8 +9,7 @@
 /* normalize css ends here */
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   color: #222;
 }
 
@@ -35,17 +34,6 @@ body {
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-size: 12px;
-}
-
-code {
-  font-size: 12px;
-  font-family: inherit;
-  background-color: rgba(254, 237, 185, 0.3);
-  padding: 2px 4px;
-  border-radius: 2px;
-}
 
 .counter-label {
   font-size: 12px;
@@ -57,11 +45,16 @@ code {
   font-weight: 700;
 }
 
+.max-counter {
+  font-size: 24px;
+}
+
 .button-container {
+  display: flex;
   margin-top: 15px;
 }
 
-.button {
+.element {
   border: 0;
   display: inline-block;
   padding: 10px 20px;
@@ -69,9 +62,12 @@ code {
   margin-left: 4px;
   background-color: bisque;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
   transition: transform 0.2s ease;
   user-select: none;
 }
@@ -82,11 +78,4 @@ code {
 
 .button:hover {
   transform: scale(1.1);
-}
-
-.divider {
-  margin: 30px auto 25px;
-  width: 50px;
-  border: 0.5px dashed #000;
-  opacity: 0.1;
 }
