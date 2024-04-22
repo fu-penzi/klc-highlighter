@@ -1,7 +1,13 @@
 mark.learned {
-  background-color: green;
+  text-shadow: 1px 2px 3px rgba(0, 255, 190, 0.6);
 }
 
 mark.not-learned {
-  background-color: red;
+  text-shadow: 1px 2px 3px rgba(255, 13, 13, 0.6);
+}
+
+mark.learned,
+mark.not-learned {
+  background-color: inherit;
+  color: inherit;
 }
