@@ -25,6 +25,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "debounce": "^2.0.0",
     "mark.js": "^8.11.1"
   }
 }

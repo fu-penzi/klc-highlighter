@@ -34,24 +34,7 @@ import { counterStorage } from './counter.storage';
   function updateCounter(newValue) {
     counterStorage.set(newValue, () => {
       setCountHtmlValue(newValue);
-
-      // Communicate with content script of
-      // active tab by sending a message
-      // chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      //   const tab = tabs[0];
-      //
-      //   chrome.tabs.sendMessage(
-      //     tab.id,
-      //     {
-      //       type: 'COUNT',
-      //       payload: {
-      //         count: newValue,
-      //       },
-      //     },
-      //     (response) => {}
-      //   );
-      // });
-    });
+     });
   }
 
   function restoreCounter() {
