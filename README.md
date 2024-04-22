@@ -2,6 +2,10 @@
 
 This extension highlights kanji from The Kodansha Kanji Learner's Course everytime it shows up on any web page.</br>
 
+Example:
+([Aozora Bunko](https://www.aozora.gr.jp/))
+![image](https://github.com/fu-penzi/klc-highlighter/assets/56361974/3177abe1-7e6a-4738-94a2-a730a1257a1b)
+
 ## Features
 
 - Highlight selected KLC Kanji on webpages.
