@@ -1,10 +1,11 @@
 # <img src="public/icons/icon_48.png" width="45" align="left"> KLC Highlighter
 
-My Chrome Extension
+This extension highlights kanji from The Kodansha Kanji Learner's Course everytime it shows up on any web page.</br>
 
 ## Features
 
 - Highlight selected KLC Kanji on webpages.
+- Different color of highlight learned and not learned kanji.
 
 ## Install
 
