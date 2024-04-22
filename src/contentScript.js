@@ -44,7 +44,24 @@ import { counterStorage } from './counter.storage';
     });
   }
 
+  function watchForDomMutations() {
+    const targetNode = document.querySelector('body');
+    const config = { childList: true, subtree: true };
+
+    const observer = new MutationObserver((mutationsList) => {
+      if (mutationsList.length) {
+        counterStorage.get((learnedCount) => {
+          highlightHtml(learnedCount || 0);
+        });
+      }
+    });
+
+    observer.observe(targetNode, config);
+  }
+
   counterStorage.get((learnedCount) => {
     highlightHtml(learnedCount || 0);
   });
+
+  watchForDomMutations();
 })();
