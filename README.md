@@ -12,8 +12,9 @@ Example:
 - Different color of highlight learned and not learned kanji.
 
 ## Install
+Download and unpack *.zip file and add select Load unpacked on chrome://extensions/ page.
 
-[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+[**Chrome** extension](https://github.com/fu-penzi/klc-highlighter/releases) <!-- TODO: Add chrome extension link inside parenthesis -->
 
 ## Contribution
 
