@@ -21,7 +21,7 @@ import { counterStorage } from './counter.storage';
 
     document.getElementById('form').addEventListener('submit', (event) => {
       event.preventDefault();
-      let value = Number(document.getElementById('counterInput').value);
+      const value = Number(document.getElementById('counterInput').value);
 
       if (!value && value !== 0) {
         return;

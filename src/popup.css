@@ -34,7 +34,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .counter-label {
   font-size: 12px;
   margin-bottom: 5px;
@@ -78,4 +77,17 @@ body {
 
 .button:hover {
   transform: scale(1.1);
+}
+
+.divider {
+  margin: 15px auto 15px;
+  width: 50px;
+  border: 0.5px dashed #000;
+  opacity: 0.1;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 10px;
 }

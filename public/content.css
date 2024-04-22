@@ -1,3 +1,7 @@
-mark.highlight {
+mark.learned {
+  background-color: green;
+}
+
+mark.not-learned {
   background-color: red;
 }
