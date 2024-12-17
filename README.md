@@ -1,4 +1,4 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> KLC Highlighter
+# <img src="public/icons/icon_128.png" width="45" align="left"> KLC Highlighter
 
 This extension highlights kanji from The Kodansha Kanji Learner's Course everytime it shows up on any web page.</br>
 
