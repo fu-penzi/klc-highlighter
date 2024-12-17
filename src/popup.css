@@ -28,6 +28,19 @@ body {
   padding: 20px;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  img {
+    margin-right: 5px;
+  }
+}
+
 .title {
   font-size: 18px;
   font-weight: 600;
@@ -59,10 +72,11 @@ body {
   padding: 10px 20px;
   margin-right: 4px;
   margin-left: 4px;
-  background-color: bisque;
+  background-color: hsl(272, 72%, 65%);
   font-size: 16px;
   border-radius: 4px;
   text-decoration: none;
+  color: white;
 }
 
 .button {
@@ -90,4 +104,5 @@ body {
   text-align: left;
   font-size: 12px;
   margin-bottom: 10px;
+  color: #999999;
 }
